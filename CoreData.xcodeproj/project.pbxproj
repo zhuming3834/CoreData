@@ -15,6 +15,10 @@
 		10B7EE6B1BFAB95000F1EA9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B7EE691BFAB95000F1EA9F /* LaunchScreen.storyboard */; };
 		10B7EE761BFAB95000F1EA9F /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B7EE751BFAB95000F1EA9F /* CoreDataTests.m */; };
 		10B7EE811BFAB95000F1EA9F /* CoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B7EE801BFAB95000F1EA9F /* CoreDataUITests.m */; };
+		10B7EE8F1BFAB96D00F1EA9F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B7EE8E1BFAB96D00F1EA9F /* CoreData.framework */; };
+		10B7EE921BFAB99000F1EA9F /* Person.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10B7EE901BFAB99000F1EA9F /* Person.xcdatamodeld */; };
+		10B7EE971BFABC6700F1EA9F /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B7EE941BFABC6700F1EA9F /* Person+CoreDataProperties.m */; };
+		10B7EE981BFABC6700F1EA9F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B7EE961BFABC6700F1EA9F /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		10B7EE7C1BFAB95000F1EA9F /* CoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B7EE801BFAB95000F1EA9F /* CoreDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataUITests.m; sourceTree = "<group>"; };
 		10B7EE821BFAB95000F1EA9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10B7EE8E1BFAB96D00F1EA9F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		10B7EE911BFAB99000F1EA9F /* Person.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Person.xcdatamodel; sourceTree = "<group>"; };
+		10B7EE931BFABC6700F1EA9F /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		10B7EE941BFABC6700F1EA9F /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		10B7EE951BFABC6700F1EA9F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		10B7EE961BFABC6700F1EA9F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B7EE8F1BFAB96D00F1EA9F /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,7 @@
 		10B7EE4F1BFAB95000F1EA9F = {
 			isa = PBXGroup;
 			children = (
+				10B7EE8E1BFAB96D00F1EA9F /* CoreData.framework */,
 				10B7EE5A1BFAB95000F1EA9F /* CoreData */,
 				10B7EE741BFAB95000F1EA9F /* CoreDataTests */,
 				10B7EE7F1BFAB95000F1EA9F /* CoreDataUITests */,
@@ -105,6 +117,11 @@
 				10B7EE5F1BFAB95000F1EA9F /* AppDelegate.m */,
 				10B7EE611BFAB95000F1EA9F /* ViewController.h */,
 				10B7EE621BFAB95000F1EA9F /* ViewController.m */,
+				10B7EE931BFABC6700F1EA9F /* Person+CoreDataProperties.h */,
+				10B7EE941BFABC6700F1EA9F /* Person+CoreDataProperties.m */,
+				10B7EE951BFABC6700F1EA9F /* Person.h */,
+				10B7EE961BFABC6700F1EA9F /* Person.m */,
+				10B7EE901BFAB99000F1EA9F /* Person.xcdatamodeld */,
 				10B7EE641BFAB95000F1EA9F /* Main.storyboard */,
 				10B7EE671BFAB95000F1EA9F /* Assets.xcassets */,
 				10B7EE691BFAB95000F1EA9F /* LaunchScreen.storyboard */,
@@ -270,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B7EE981BFABC6700F1EA9F /* Person.m in Sources */,
 				10B7EE631BFAB95000F1EA9F /* ViewController.m in Sources */,
 				10B7EE601BFAB95000F1EA9F /* AppDelegate.m in Sources */,
+				10B7EE921BFAB99000F1EA9F /* Person.xcdatamodeld in Sources */,
+				10B7EE971BFABC6700F1EA9F /* Person+CoreDataProperties.m in Sources */,
 				10B7EE5D1BFAB95000F1EA9F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -400,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -496,6 +516,7 @@
 				10B7EE871BFAB95000F1EA9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10B7EE881BFAB95000F1EA9F /* Build configuration list for PBXNativeTarget "CoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				10B7EE8A1BFAB95000F1EA9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10B7EE8B1BFAB95000F1EA9F /* Build configuration list for PBXNativeTarget "CoreDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,8 +534,22 @@
 				10B7EE8D1BFAB95000F1EA9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10B7EE901BFAB99000F1EA9F /* Person.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10B7EE911BFAB99000F1EA9F /* Person.xcdatamodel */,
+			);
+			currentVersion = 10B7EE911BFAB99000F1EA9F /* Person.xcdatamodel */;
+			path = Person.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 10B7EE501BFAB95000F1EA9F /* Project object */;
 }
